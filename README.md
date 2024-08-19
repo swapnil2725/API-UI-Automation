@@ -3,10 +3,11 @@ To run the tests, follow these steps:
 
 1. Install Dependencies: Ensure you have pytest and any other required libraries installed. You can install them using pip:
 
+      `pip install pytest`
       `pip install pytest requests`
 
-2. Set Up Environment Variables: Make sure BASE_URL and AUTH_TOKEN are set in your environment. You can set them directly in your terminal or use a .env file with python-dotenv.
-3. Run Tests: Execute the tests using pytest:
+1. Set Up Environment Variables: Make sure BASE_URL and AUTH_TOKEN are set in your environment. You can set them directly in your terminal or use a .env file with python-dotenv.
+2. Run Tests: Execute the tests using pytest:
       `pytest {FileName}`
 
 Additional Information
