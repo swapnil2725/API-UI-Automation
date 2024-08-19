@@ -24,18 +24,7 @@ class HomePage(BasePage):
         self.wait_utils = WaitUtils(driver)
 
     def add_user(self, first_name="Test1", last_name="User1", dependents="3"):
-        """
-        Add a user with the provided details.
 
-        Parameters:
-        -----------
-        first_name : str, optional
-            First name of the user (default is "Test1").
-        last_name : str, optional
-            Last name of the user (default is "User1").
-        dependents : str, optional
-            Number of dependents (default is "3").
-        """
         self.wait_utils.wait_for_element_to_be_clickable(Locator.addUser)
         self.do_click(Locator.addUser)
 
@@ -47,19 +36,7 @@ class HomePage(BasePage):
         self.do_click(Locator.addEmployee)
 
     def verify_table_headers(self, expected_headers):
-        """
-        Verify if the actual table headers match the expected headers.
 
-        Parameters:
-        -----------
-        expected_headers : list
-            A list of expected header names.
-
-        Raises:
-        -------
-        AssertionError
-            If the actual headers do not match the expected headers.
-        """
         headers = self.wait_utils.wait_for_elements_to_be_visible(Locator.employees_table)
         actual_headers = [header.text.strip() for header in headers]
 

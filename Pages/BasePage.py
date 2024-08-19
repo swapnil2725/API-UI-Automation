@@ -47,14 +47,7 @@ class BasePage:
         self.logger = logging.getLogger(__name__)  # Initialize logger for the class
 
     def do_click(self, by_locator):
-        """
-        Click on an element after it becomes clickable.
 
-        Parameters:
-        -----------
-        by_locator : tuple
-            Locator strategy for the element (By.XPATH, By.ID, etc.).
-        """
         try:
             element = self.waitUtils.wait_for_element_to_be_clickable(by_locator)
             element.click()
@@ -64,14 +57,7 @@ class BasePage:
             raise
 
     def do_page_scroll(self, by_locator):
-        """
-        Scrolls the page to bring an element into view using the END key.
 
-        Parameters:
-        -----------
-        by_locator : tuple
-            Locator strategy for the element.
-        """
         try:
             element = self.waitUtils.wait_for_element_to_be_visible(by_locator)
             element.send_keys(Keys.END)
@@ -81,16 +67,7 @@ class BasePage:
             raise
 
     def send_keys_to_element(self, by_locator, keys):
-        """
-        Sends the provided keys to an input element.
 
-        Parameters:
-        -----------
-        by_locator : tuple
-            Locator strategy for the input element.
-        keys : str
-            Keys to send to the element.
-        """
         try:
             element = self.waitUtils.wait_for_element_to_be_visible(by_locator)
             element.send_keys(keys)
@@ -100,14 +77,7 @@ class BasePage:
             raise
 
     def clear(self, by_locator):
-        """
-        Clears the input field.
 
-        Parameters:
-        -----------
-        by_locator : tuple
-            Locator strategy for the input element.
-        """
         try:
             element = self.waitUtils.wait_for_element_to_be_clickable(by_locator)
             element.clear()
@@ -117,19 +87,7 @@ class BasePage:
             raise
 
     def get_table_rows(self, locator):
-        """
-        Retrieves the rows from the table element.
 
-        Parameters:
-        -----------
-        locator : tuple
-            Locator strategy for the table element.
-
-        Returns:
-        --------
-        list
-            List of WebElement rows in the table.
-        """
         try:
             table = self.waitUtils.wait_for_table_to_load(locator)
             rows = table.find_elements(By.XPATH, ".//tbody/tr")

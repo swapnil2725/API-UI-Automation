@@ -3,9 +3,11 @@ from selenium.webdriver.common.by import By
 
 class Locator:
     """ login page locator"""
-    Username = (By.ID, "Username")
-    Password = (By.ID, "Password")
-    login = (By.XPATH, "//button[@type='submit']")
+    USERNAME_INPUT = (By.ID, "Username")
+    PASSWORD_INPUT = (By.ID, "Password")
+    LOGIN_BUTTON = (By.XPATH, "//button[@type='submit']")
+    ERROR_MESSAGE = (By.XPATH,"//*[@action='/Prod/Account/LogIn']//*[@xpath='1']")
+    LOGIN_FORM = (By.XPATH,"//*[@class='container']//*[contains(text(),'Paylocity Benefits Dashboard')]")
 
     """ home page Locator"""
     addUser = (By.ID, "add")
