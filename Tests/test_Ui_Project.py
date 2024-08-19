@@ -25,7 +25,7 @@ class Test_Automation_Project(BaseTest):
             "Gross Pay",
             "Benefits Cost",
             "Net Pay",
-            
+            "Actions"
         ]
 
         # Verify table headers
