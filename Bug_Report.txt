@@ -1,0 +1,285 @@
+UAT Testing : 
+************************************************************************************************************************************************************************
+
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Bug
+Summary : No loader on Log in
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3.Click on Log-in
+
+Current state : There is no loader while log in
+
+Execpted state : here user see some loader.
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira 
+
+Assignee: UI/UX developer
+************************************************************************************************************************************************************************
+
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Bug
+Summary : No Session Time management
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3.Click on Log-in
+		4. wait for long time on home
+		5. try to click on anywhere in page
+
+Current state : After some times the list of user is disapeared
+
+Execpted state : here user see some loader.
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira 
+
+Assignee: UI/UX developer
+
+************************************************************************************************************************************************************************
+
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Improvement
+Summary : Pagination for Entry will be good
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. create entry as much as you can
+		5. scroll to page down
+
+Current state : user need to scroll long way down to see entry
+
+Execpted state : here we can user Pagination.
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira 
+
+Assignee: UI/UX developer
+
+************************************************************************************************************************************************************************
+
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Improvement
+Summary : Search for entry
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. create entry as much as you can
+
+
+Execpted state : if user have some search text box for searching it will great.
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira 
+
+Assignee: UI/UX developer
+
+
+************************************************************************************************************************************************************************
+
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Bug
+Summary : In  add employee , first Name text box did not having limitation and able to add numbers.
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. Click on Add employee
+		5. fill the first name ( type like Swapnil12345)
+
+current state : user can put any number of charchater with numbers.
+
+Execpted state : user should restrict with limitation(count) and just with character  
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira{example} 
+
+Assignee: UI/UX developer
+
+************************************************************************************************************************************************************************
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Bug
+Summary : In  add employee , first Name,Last Name text box did not having limitation and able to add numbers.
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. Click on Add employee
+		5. fill the first name & Last Name ( type like Swapnil12345 , Ghangale789798)
+
+current state : user can put any number of charchater with numbers.
+
+Execpted state : user should restrict with limitation(count) and just with character  
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira{example} 
+
+Assignee: UI/UX developer
+
+************************************************************************************************************************************************************************
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Bug
+Summary : In Dependents user just able to add number not character and with not more than 10 .
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. Click on Add employee
+		5. fill the FirstName and LastName
+		6. fill Dependents like (85964166)
+
+current state : user can put any number of charchater with numbers.
+
+Execpted state : user should restrict with limitation(count) and just with number  
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira{example} 
+
+Assignee: UI/UX developer
+
+************************************************************************************************************************************************************************
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Bug
+Summary : In Dependents user just able to add number not character and with not more than 10 .
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. Click on Add employee
+		5. fill the FirstName and LastName
+		6. fill Dependents like (85964166)
+
+current state : user can put any number of charchater with numbers.
+
+Execpted state : user should restrict with limitation(count) and just with number  
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira{example} 
+
+Assignee: UI/UX developer
+
+************************************************************************************************************************************************************************
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Improvement
+Summary : Validation on text box not showing any error
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. Click on Add employee
+		5. fill the FirstName and LastName
+		6. fill Dependents like 
+		7. Click on Add button
+
+current state : not showing any validation error
+
+Execpted state : if validation not full fill then it should show some error.
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira{example} 
+
+Assignee: UI/UX developer
+
+************************************************************************************************************************************************************************
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Improvement
+Summary : Validation on text box not showing any error
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. Click on Add employee
+		5. fill the FirstName and LastName
+		6. fill Dependents like 
+		7. Click on Add button
+
+current state : not showing any validation error
+
+Execpted state : if validation not full fill then it should show some error.
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira{example} 
+
+Assignee: UI/UX developer
+************************************************************************************************************************************************************************
+
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Bug
+Summary : Salary to Gross pay calculation wrong
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. Verify the salary and gross pay
+
+current state : Salary is 52000 and gross pay 2000 which wrong
+
+Execpted state : if salary 52000 so after tax it should ne with cutting tax and other not too much less.
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira{example} 
+
+Assignee: UI/UX developer / Backend Developer
+
+************************************************************************************************************************************************************************
+
+Project: Paylocity Benefits Dashboard
+
+Issue Type : Bug
+Summary : After adding new entry not populating either last or first
+Description :
+
+	Step to Replicate :
+		1. open URL 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/LogIn'
+		2. Enter User Credential 
+		3. Click on Log-in
+		4. Click add employee button
+		5. fill the FirstName and LastName and dependants
+		6. Verify the entry should displayed in the list
+
+current state : the entry is not showing either top/down or asending or desending but inside anywhere
+
+Execpted state : the entry should be ascending wise or decending wise.
+ 
+Issue Version : 1.0.0
+Attachment : Video attached with Jira{example} 
+
+Assignee: UI/UX developer / Backend Developer
+************************************************************************************************************************************************************************
