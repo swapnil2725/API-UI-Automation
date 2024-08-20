@@ -1,5 +1,5 @@
 import pytest
-from BaseClass import BaseClass
+from ApiTest.BaseClass import BaseClass
 from config import BASE_URL, AUTH_TOKEN  # Importing from config.py
 
 
@@ -8,7 +8,7 @@ def api():
     return BaseClass(AUTH_TOKEN, BASE_URL)  # Pass auth_token and base_url directly
 
 
-def test_fetechin_all_employees(api):
+def test_fetchingall_employees(api):
     """Test fetching all employees."""
     response = api.get_employees()
     print(response.json())  # Print response for debugging
@@ -16,7 +16,7 @@ def test_fetechin_all_employees(api):
     assert isinstance(response.json(), list), "Expected response to be a list of employees"
 
 
-def test_creating_new_employee(api):
+def test_createnew_employee(api):
     """Test creating a new employee and return its ID."""
     payload = {
         "firstName": "Test1",
@@ -34,9 +34,9 @@ def test_creating_new_employee(api):
     return created_employee["id"]
 
 
-def test_feteching_employee_withID(api):
+def test_T003(api):
     """Test fetching an employee by ID."""
-    employee_id = test_creating_new_employee(api)  # Call the test to get employee ID
+    employee_id = test_createnew_employee(api)  # Call the test to get employee ID
     response = api.get_employee_by_id(employee_id)
     print(response.json())  # Print response for debugging
     assert response.status_code == 200, "Expected status code to be 200"
@@ -47,9 +47,9 @@ def test_feteching_employee_withID(api):
     assert employee_data["id"] == employee_id, f"Expected employee ID to be {employee_id}"
 
 
-def test_updating_existing_employee(api):
+def test_T004(api):
     """Test updating an existing employee."""
-    employee_id = test_creating_new_employee(api)  # Call the test to get employee ID
+    employee_id = test_createnew_employee(api)  # Call the test to get employee ID
     payload = {
         "id": employee_id,
         "firstName": "Wanda",
@@ -69,9 +69,9 @@ def test_updating_existing_employee(api):
     assert updated_employee["dependants"] == 2, "Expected dependants to be 2"
 
 
-def test_delete_employee_withID(api):
-    """Test deleting an employee with ID."""
-    employee_id = test_creating_new_employee(api)  # Call the test to get employee ID
+def test_T005(api):
+    """Test deleting an employee."""
+    employee_id = test_createnew_employee(api)  # Call the test to get employee ID
     response = api.delete_employee(employee_id)
     print(response.text)  # Print raw response text for debugging
     assert response.status_code == 200, "Expected status code to be 200"
