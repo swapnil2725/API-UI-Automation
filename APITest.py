@@ -70,7 +70,7 @@ def test_updating_existing_employee(api):
 
 
 def test_delete_employee_withID(api):
-    """Test deleting an employee."""
+    """Test deleting an employee with ID."""
     employee_id = test_creating_new_employee(api)  # Call the test to get employee ID
     response = api.delete_employee(employee_id)
     print(response.text)  # Print raw response text for debugging
